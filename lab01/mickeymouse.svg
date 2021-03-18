@@ -45,6 +45,33 @@
 
   <path d="M256 256 V270 V242 M256 256 H270 H242" stroke="black" fill="white"></path>
   <text x="254" y="250" font-size="16" text-anchor="middle" fill="red">(256, 256)</text>
-</svg>
 
+  <!-- MickeyMouse path -->
+  <path d="M390 223 
+   A158 158, 0 1 1, 123 223
+   A92 92, 0 1 1, 175 172
+   A158 158, 0 0 1,335 172
+   A92 92, 0 1 1 , 390 223" stroke-width="10" stroke="#F00" fill="none" opacity="0.3"/>
+
+  <text x="410" y="340" font-size="16" text-anchor="middle" fill="red">(410, 320)</text>
+  <circle id="c1" cx="410" cy="320" r="1" stroke="red" fill="none">
+    <animate attributeName="r" to="10" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="100" y="340" font-size="16" text-anchor="middle" fill="red">(100, 320)</text>
+  <circle id="c2" cx="100" cy="320" r="1" stroke="red" fill="none">
+    <animate attributeName="r" to="10" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="0" cy="0" r="5" stroke="blue" fill="none">
+    <animateMotion dur="6s" 
+     path="M390 223 
+     A158 158, 0 1 1, 123 223
+     A92 92, 0 1 1, 175 172
+     A158 158, 0 0 1,335 172
+     A92 92, 0 1 1 , 390 223" 
+     repeatCount="indefinite" rotate="auto"/>
+    <animate attributeName="r" to="15" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</svg>
     
