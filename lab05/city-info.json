@@ -1,0 +1,200 @@
+[
+    {
+        "COUNTYNAME": "新北市",
+        "COUNTYENG": "New Taipei City",
+        "COUNTYTYPE": "直轄市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flag_of_New_Taipei_City.svg/50px-Flag_of_New_Taipei_City.svg.png",
+        "COUNTYAREA": "2,052.5667",
+        "COUNTYPUP": "4,028,474",
+        "COUNTYGOVLOC": "板橋區"
+    },
+    {
+        "COUNTYNAME": "臺中市",
+        "COUNTYENG": "Taichung City",
+        "COUNTYTYPE": "直轄市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Flag_of_Taichung_City.svg/50px-Flag_of_Taichung_City.svg.png",
+        "COUNTYAREA": "2,214.8968",
+        "COUNTYPUP": "2,821,322",
+        "COUNTYGOVLOC": "西屯區"
+    },
+    {
+        "COUNTYNAME": "高雄市",
+        "COUNTYENG": "Kaohsiung City",
+        "COUNTYTYPE": "直轄市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_Kaohsiung_City.svg/50px-Flag_of_Kaohsiung_City.svg.png",
+        "COUNTYAREA": "2,951.8524",
+        "COUNTYPUP": "2,761,462",
+        "COUNTYGOVLOC": "鳳山區\n苓雅區"
+    },
+    {
+        "COUNTYNAME": "臺北市",
+        "COUNTYENG": "Taipei City",
+        "COUNTYTYPE": "直轄市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Taipei_City.svg/50px-Flag_of_Taipei_City.svg.png",
+        "COUNTYAREA": "271.7997",
+        "COUNTYPUP": "2,586,660",
+        "COUNTYGOVLOC": "信義區"
+    },
+    {
+        "COUNTYNAME": "桃園市",
+        "COUNTYENG": "Taoyuan City",
+        "COUNTYTYPE": "直轄市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Flag_of_Taoyuan_City.svg/50px-Flag_of_Taoyuan_City.svg.png",
+        "COUNTYAREA": "1,220.9540",
+        "COUNTYPUP": "2,270,689",
+        "COUNTYGOVLOC": "桃園區"
+    },
+    {
+        "COUNTYNAME": "臺南市",
+        "COUNTYENG": "Tainan City",
+        "COUNTYTYPE": "直轄市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Flag_of_Tainan_City.svg/50px-Flag_of_Tainan_City.svg.png",
+        "COUNTYAREA": "2,191.6531",
+        "COUNTYPUP": "1,871,961",
+        "COUNTYGOVLOC": "安平區\n新營區"
+    },
+    {
+        "COUNTYNAME": "彰化縣",
+        "COUNTYENG": "Changhua County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Flag_of_Changhua_County.svg/50px-Flag_of_Changhua_County.svg.png",
+        "COUNTYAREA": "1,074.3960",
+        "COUNTYPUP": "1,263,635",
+        "COUNTYGOVLOC": "彰化市"
+    },
+    {
+        "COUNTYNAME": "屏東縣",
+        "COUNTYENG": "Pingtung County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Flag_of_Pingtung_County.svg/50px-Flag_of_Pingtung_County.svg.png",
+        "COUNTYAREA": "2,775.6003",
+        "COUNTYPUP": "810,449",
+        "COUNTYGOVLOC": "屏東市"
+    },
+    {
+        "COUNTYNAME": "雲林縣",
+        "COUNTYENG": "Yunlin County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Yunlin_County.svg/50px-Flag_of_Yunlin_County.svg.png",
+        "COUNTYAREA": "1,290.8326",
+        "COUNTYPUP": "675,074",
+        "COUNTYGOVLOC": "斗六市"
+    },
+    {
+        "COUNTYNAME": "新竹縣",
+        "COUNTYENG": "Hsinchu County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Hsinchu_County_%28since_2019%29.svg/50px-Flag_of_Hsinchu_County_%28since_2019%29.svg.png",
+        "COUNTYAREA": "1,427.5369",
+        "COUNTYPUP": "571,774",
+        "COUNTYGOVLOC": "竹北市"
+    },
+    {
+        "COUNTYNAME": "苗栗縣",
+        "COUNTYENG": "Miaoli County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Flag_of_Miaoli_County.svg/50px-Flag_of_Miaoli_County.svg.png",
+        "COUNTYAREA": "1,820.3149",
+        "COUNTYPUP": "541,460",
+        "COUNTYGOVLOC": "苗栗市"
+    },
+    {
+        "COUNTYNAME": "嘉義縣",
+        "COUNTYENG": "Chiayi County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Chiayi_County.svg/50px-Flag_of_Chiayi_County.svg.png",
+        "COUNTYAREA": "1,903.6367",
+        "COUNTYPUP": "498,031",
+        "COUNTYGOVLOC": "太保市"
+    },
+    {
+        "COUNTYNAME": "南投縣",
+        "COUNTYENG": "Nantou County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/zh/thumb/f/fb/Nantou_County_flag.svg/50px-Nantou_County_flag.svg.png",
+        "COUNTYAREA": "4,106.4360",
+        "COUNTYPUP": "489,509",
+        "COUNTYGOVLOC": "南投市"
+    },
+    {
+        "COUNTYNAME": "宜蘭縣",
+        "COUNTYENG": "Yilan County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Yilan_County.svg/50px-Flag_of_Yilan_County.svg.png",
+        "COUNTYAREA": "2,143.6251",
+        "COUNTYPUP": "452,497",
+        "COUNTYGOVLOC": "宜蘭市"
+    },
+    {
+        "COUNTYNAME": "新竹市",
+        "COUNTYENG": "Hsinchu City",
+        "COUNTYTYPE": "市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Flag_of_Hsinchu_City.svg/50px-Flag_of_Hsinchu_City.svg.png",
+        "COUNTYAREA": "104.1526",
+        "COUNTYPUP": "451,868",
+        "COUNTYGOVLOC": "北區"
+    },
+    {
+        "COUNTYNAME": "基隆市",
+        "COUNTYENG": "Keelung City",
+        "COUNTYTYPE": "市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Flag_of_Keelung_City.svg/50px-Flag_of_Keelung_City.svg.png",
+        "COUNTYAREA": "132.7589",
+        "COUNTYPUP": "367,178",
+        "COUNTYGOVLOC": "中正區"
+    },
+    {
+        "COUNTYNAME": "花蓮縣",
+        "COUNTYENG": "Hualien County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Flag_of_Hualien_County.svg/50px-Flag_of_Hualien_County.svg.png",
+        "COUNTYAREA": "4,628.5714",
+        "COUNTYPUP": "323,666",
+        "COUNTYGOVLOC": "花蓮市"
+    },
+    {
+        "COUNTYNAME": "嘉義市",
+        "COUNTYENG": "Chiayi City",
+        "COUNTYTYPE": "市",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Chiayi_City.svg/50px-Flag_of_Chiayi_City.svg.png",
+        "COUNTYAREA": "60.0256",
+        "COUNTYPUP": "265,560",
+        "COUNTYGOVLOC": "東區"
+    },
+    {
+        "COUNTYNAME": "臺東縣",
+        "COUNTYENG": "Taitung County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Flag_of_Taitung_County.svg/50px-Flag_of_Taitung_County.svg.png",
+        "COUNTYAREA": "3,515.2526",
+        "COUNTYPUP": "214,745",
+        "COUNTYGOVLOC": "臺東市"
+    },
+    {
+        "COUNTYNAME": "金門縣",
+        "COUNTYENG": "Kinmen County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Kinmen_County.svg/50px-Flag_of_Kinmen_County.svg.png",
+        "COUNTYAREA": "151.6560",
+        "COUNTYPUP": "140,406",
+        "COUNTYGOVLOC": "金城鎮"
+    },
+    {
+        "COUNTYNAME": "澎湖縣",
+        "COUNTYENG": "Penghu County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Flag_of_Penghu_County.svg/50px-Flag_of_Penghu_County.svg.png",
+        "COUNTYAREA": "126.8641",
+        "COUNTYPUP": "105,867",
+        "COUNTYGOVLOC": "馬公市"
+    },
+    {
+        "COUNTYNAME": "連江縣",
+        "COUNTYENG": "Lienchiang County",
+        "COUNTYTYPE": "縣",
+        "COUNTYFLAG": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_Lienchiang_County.svg/50px-Flag_of_Lienchiang_County.svg.png",
+        "COUNTYAREA": "28.8000",
+        "COUNTYPUP": "13,336",
+        "COUNTYGOVLOC": "南竿鄉"
+    }
+]
