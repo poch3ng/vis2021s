@@ -1,14 +1,181 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
-  <head>
-    <meta charset="utf-8">
-    <title>D3 Page Template</title>
-    <script src="http://d3js.org/d3.v6.min.js" charset="utf-8"></script> <!-- v6.5.0 -->
+<html>
+
+<head>
+	<title>lab 09</title>
+	<meta charset="utf-8">
+	<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+	<style type="text/css">
+		video {
+			position: absolute;
+			top: 100px;
+			left: 320px;
+		}
+
+		svg {
+			position: absolute;
+			top: 100px;
+			left: 320px;
+			border: 1px solid red;
+		}
+
+		svg text {
+			font-size: 40px;
+			font-weight: bold;
+			fill: white;
+			stroke: black;
+			stroke-width: 1px;
+			font-family: 'MS PGothic';
+		}
+
+		#subtitle-select {
+			position: absolute;
+			top: 60px;
+			left: 320px;
+		}
+	</style>
 </head>
+
 <body>
-    <script type="text/javascript">
-      // Your beautiful D3 code will go here
-    </script>
-  </body>
+
+  <input type="button" onclick="play();" value="播放" id="btnPlay">
+
+	<video id="video" width="1280" height="720" preload="auto">
+		<source src="./video/mv.mp4" type="video/mp4">
+	</video>
+
+	<div id="srt">
+
+	</div>
+
+	<script type="text/javascript">
+		var w = 1280;
+		var h = 720;
+		var frame = -1;
+		var textAniTime = 100;
+		var maxTimeLength = 0
+		var subtitleLoadStatus = 0;
+		var playerStatus = 0;
+
+		var svg = d3.select('body')
+			.append('svg')
+			.attr('width', w)
+			.attr('height', h)
+			.attr('viewbox', function () {
+				return "0, 0, " + w + ', ' + h;
+			})
+			;
+
+		function selectLanguage() {
+			clearSubtitle();
+			language = document.getElementById("language").value;
+			makeSubtitle("language");
+			frame = -1
+			subtitleLoadStatus = 1;
+		}
+
+
+		function play() {
+			clearSubtitle();
+      makeSubtitle("language");
+
+			if (playerStatus == 0) {
+				document.getElementById("btnPlay").value = "暫停";
+				document.getElementById("video").play();
+				playerStatus = 1;
+			} else {
+				document.getElementById("btnPlay").value = "播放";
+				document.getElementById("video").pause();
+				playerStatus = 0;
+			}
+		}
+
+
+		function clearSubtitle() {
+			var element = document.getElementsByTagName("svg")[0];
+			element.innerHTML = "";
+			element = document.getElementById("srt");
+			element.innerHTML = "";
+		}
+
+		d3.select(video)
+			// .style('display', 'none')
+			.on('timeupdate', () => {
+				startSubtitle(video.currentTime);
+			});
+
+		function startSubtitle(currentTime) {
+			subtitle.filter(function (d, i) {
+				if (frame < i && currentTime > d.begin && currentTime < d.end) {
+					frame = i;
+					return true;
+				}
+				return false;
+			})
+				.transition()
+				.duration(textAniTime)
+				.attr('opacity', 1)
+				.transition()
+				.delay(function (d) {
+					return (d.end - currentTime) * 1000;
+				})
+				.duration(textAniTime)
+				.attr('opacity', 0)
+				;
+		}
+
+		async function makeSubtitle(file) {
+			var arrayChinese = [];
+			d3.text('./video/zh-TW.srt', function (data) {
+				parsedCSV = d3.csvParseRows(data);
+				d3.select('#srt')
+					.selectAll('p')
+					.data(parsedCSV)
+					.enter()
+					.append("p")
+					.text(function (d, i) {
+						if (!isNaN(d) && d != '') {
+							key = parseInt(d);
+						} else if (d == '') {
+							arrayChinese.push({
+								"begin": begin,
+								"end": end,
+								"subtile": subtile
+							});
+						} else if (d.length == 3) {
+
+							offset = -0.3
+							begin = (parseInt(d[0][3]) * 10 + parseInt(d[0][4])) * 60 +
+								(parseInt(d[0][6]) * 10 + parseInt(d[0][7])) + offset;
+
+							end = (parseInt(d[1][11]) * 10 + parseInt(d[1][12])) * 60 +
+								(parseInt(d[1][14]) * 10 + parseInt(d[1][15])) + offset;
+							totalTime = d[1][11] + d[1][12] + ':' + d[1][14] + d[1][15]
+							maxTimeLength = end
+						} else {
+							subtile = d;
+						}
+					})
+					;
+				subtitle = svg
+					.append('g')
+					.selectAll('text')
+					.data(arrayChinese)
+					.enter()
+					.append('text')
+					.text(function (d, i) {
+						return d.subtile;
+					})
+					.attr('x', w / 2)
+					.attr('y', function (d, i) {
+						return h - 50
+					})
+					.attr("text-anchor", "middle")
+					.attr('opacity', 0)
+			});
+		}
+
+	</script>
+</body>
+
 </html>
-  
